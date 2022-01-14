@@ -1,0 +1,40 @@
+body {
+    font-family: 'Raleway';
+    height: 100%;
+    margin: 0;
+    background-color: #000000;
+}
+a {color:white}
+a:hover {text-decoration: none;}
+
+.back404 {
+    background: url(/404.jpeg) no-repeat center center fixed; 
+    top: 0;
+    left: 0; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/.404.jpeg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/404.jpeg', sizingMethod='scale')";
+}
+
+.container {
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main {
+    margin-top: 200px;
+    text-align: center;
+}
+.logo {
+    text-align: center;
+}
+
+p {
+    margin: 48px 8px 0 20px;
+    color: #737373;
+    font-size: 16px;
+    line-height: 140%;  
+}
