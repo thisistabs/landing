@@ -7,18 +7,6 @@ body {
 a {color:white}
 a:hover {text-decoration: none;}
 
-.back404 {
-    background: url(/404.jpeg) no-repeat center center fixed; 
-    top: 0;
-    left: 0; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/.404.jpeg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/404.jpeg', sizingMethod='scale')";
-}
-
 .container {
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
