@@ -2,7 +2,6 @@ body {
     font-family: 'Raleway';
     height: 100%;
     margin: 0;
-    background-color: #000000;
 }
 a {color:white}
 a:hover {text-decoration: none;}
@@ -25,4 +24,20 @@ p {
     color: #737373;
     font-size: 16px;
     line-height: 150%;  
+}
+
+.bg1 {
+    background-color: #264653;
+}
+.bg2 {
+    background-color:#2A9D8F;
+}
+.bg3 {
+    background-color:#E9C46A;
+}
+.bg4 {
+    background-color:#F4A261;
+}
+.bg5 {
+    background-color:#E76F51;
 }
