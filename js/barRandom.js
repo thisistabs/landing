@@ -1,11 +1,11 @@
-function setProperty(duration) {
+function setProperty(size) {
     getComputedStyle(document.documentElement).getPropertyValue('--bar-size');
-    document.documentElement.style.setProperty('--bar-size', duration +'%');
+    document.documentElement.style.setProperty('--bar-size', size +'%');
 }
 
-function changeAnimationTime(min, max) {
+function changeAnimationSize(min, max) {
     var animationDuration = Math.random() * (max - min) + min;
     setProperty(Math.round(animationDuration));
 }
   
-changeAnimationTime(70, 100);
+changeAnimationSize(70, 100);
