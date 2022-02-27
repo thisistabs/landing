@@ -70,6 +70,8 @@ p {
     height: 20%;
 }
 .rotate {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg); 
 }
 .one {
