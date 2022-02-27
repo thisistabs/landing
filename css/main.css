@@ -1,3 +1,6 @@
+:root {
+    --bar-size: 0%; 
+}
 body {
     font-family: 'Raleway';
     height: 100%;
@@ -40,4 +43,72 @@ p {
 }
 .bg5 {
     background-color:#E76F51;
+}
+
+/* LOADING */
+.image {
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin:-15px 0 0 -15px;
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    border-radius: 100%;
+    clip-path: circle(50%);
+    
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.bar {
+    width: 100%;
+    height: 20%;
+}
+.rotate {
+    -moz-transform: rotate(180deg); 
+}
+.one {
+    height: 100%;
+    background-color: #0077B6;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    animation: oneAnimation 2s alternate infinite;
+}
+.two {
+    height: 100%;
+    background-color: #2A9D8F;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    animation: oneAnimation 2s alternate-reverse infinite;
+}
+.three {
+    height: 100%;
+    background-color: #E76F51;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    animation: oneAnimation 2s alternate infinite;
+}
+.four {
+    height: 100%;
+    background-color: #E9C46A;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    animation: oneAnimation 2s alternate infinite;
+}
+.five {
+    height: 100%;
+    background-color: #F4A261;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    animation: oneAnimation 2s ease alternate infinite;
+}
+@keyframes oneAnimation {
+    0% { width: 0%;}
+    50% {width: var(--bar-size)}
+    100% {width: 0%;}
 }
