@@ -46,7 +46,7 @@ p {
 }
 
 /* LOADING */
-.image {
+.circle {
     background-color: #f9f9f9;
     position: absolute;
     top: 50%;
@@ -74,42 +74,44 @@ p {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg); 
 }
-.one {
+.ocean {background-color: #0077B6;}
+.grass {background-color:#2A9D8F}
+.sun {background-color: #E9C46A}
+.tangerine {background-color:#F4A261}
+.tomato {background-color:#E76F51}
+
+.loadingBar {
     height: 100%;
-    background-color: #0077B6;
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
-    animation: oneAnimation 2s alternate infinite;
-}
-.two {
-    height: 100%;
-    background-color: #2A9D8F;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    animation: oneAnimation 2s alternate-reverse infinite;
-}
-.three {
-    height: 100%;
-    background-color: #E76F51;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    animation: oneAnimation 2s alternate infinite;
-}
-.four {
-    height: 100%;
-    background-color: #E9C46A;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    animation: oneAnimation 2s alternate infinite;
-}
-.five {
-    height: 100%;
-    background-color: #F4A261;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    animation: oneAnimation 2s ease alternate infinite;
-}
+} 
+.animationOne {animation: oneAnimation 2s ease infinite;}
+.animationTwo {animation: twoAnimation 2s ease infinite;}
+.animationThree {animation: threeAnimation 2s ease infinite;}
+.animationFour {animation: fourAnimation 2s ease infinite;}
+.animationFive {animation: fiveAnimation 2s ease infinite;}
+
 @keyframes oneAnimation {
+    0% { width: 0%;}
+    50% {width: var(--bar-size)}
+    100% {width: 0%;}
+}
+@keyframes twoAnimation {
+    0% { width: 0%;}
+    60% {width: var(--bar-size)}
+    100% {width: 0%;}
+}
+@keyframes threeAnimation {
+    0% { width: 0%;}
+    40% {width: var(--bar-size)}
+    100% {width: 0%;}
+}
+@keyframes fourAnimation {
+    0% { width: 0%;}
+    70% {width: var(--bar-size)}
+    100% {width: 0%;}
+}
+@keyframes fiveAnimation {
     0% { width: 0%;}
     50% {width: var(--bar-size)}
     100% {width: 0%;}

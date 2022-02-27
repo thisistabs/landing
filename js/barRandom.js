@@ -8,4 +8,4 @@ function changeAnimationTime(min, max) {
     setProperty(Math.round(animationDuration));
 }
   
-changeAnimationTime(50, 100);
+changeAnimationTime(70, 100);
