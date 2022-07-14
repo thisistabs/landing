@@ -36,51 +36,17 @@ p {
     line-height: 150%;  
 }
 
-.bg1 {
-    background-color: #0077B6;
+/* Animations */
+h1, p, .nav, .logo {
+    animation-name: text;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
 }
-.bg2 {
-    background-color:#2A9D8F;
-}
-.bg3 {
-    background-color:#E9C46A;
-}
-.bg4 {
-    background-color:#F4A261;
-}
-.bg5 {
-    background-color:#E76F51;
-}
-.bg6 {
-    background-color:#AE2012;
-}
-.bg7 {
-    background-color:#BB3E03;
-}
-.bg8 {
-    background-color:#CA6702;
-}
-.bg9 {
-    background-color:#CA6702;
-}
-.bg10 {
-    background-color:#EE9B00;
-}
-.bg11 {
-    background-color:#E9D8A6;
-}
-.bg12 {
-    background-color:#94D2BD;
-}
-.bg13 {
-    background-color:#0A9396;
-}
-.bg14 {
-    background-color:#005F73;
-}
-.bg15 {
-    background-color:#001219;
-}
+@keyframes text {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
 .bg-image {
     background: url(../img/bg-phones.png) no-repeat center center fixed; 
     top: 0;
@@ -90,6 +56,9 @@ p {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-phones.png', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-phones.png', sizingMethod='scale')";
 }
